@@ -11,6 +11,10 @@ body {
   margin: 10px 0px;
 }
 
+#mainContainer {
+  width: 100vw;
+}
+
 #mainbanner {
   width: 100vw;
   height: 80vh;
@@ -34,18 +38,18 @@ body {
   top: 130px;
   left: 100px;
   font-size: 200%;
-  overflow: hidden;
 }
 
 #bannerHeader h1 {
   font-size: 200%;
   margin-bottom: 0px;
+  line-height: 60px;
 }
 
 #bannerHeader p {
   margin: 0;
   font-size: 12pt;
-  width: 700px;
+  width: 70vw;
 }
 
 .scrolling-wrapper-flexbox {
@@ -84,4 +88,19 @@ body {
     background-image: url('../img/1.png');
     background-size: contain;
 } */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  #bannerHeader {
+    z-index: 2;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    font-size: unset;
+  }
+  #bannerHeader h1 {
+    line-height: unset;
+  }
+  #bannerHeader p {
+    width: 90vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */
